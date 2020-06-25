@@ -64,15 +64,15 @@ contract Token17 is KIP17Token, Ownable {
      * @notice Set new price to create certificates
      * @param newMintingPrice The new price
      */
-    function setMintingPrice(uint256 newMintingPrice) onlyOwner external {
-        _mintingPrice = newMintingPrice;
-    }
+    // function setMintingPrice(uint256 newMintingPrice) onlyOwner external {
+    //     _mintingPrice = newMintingPrice;
+    // }
 
     /**
      * @notice Set new ERC20 currency to create certificates
      * @param newMintingCurrency The new currency
      */
-    function setMintingCurrency(KIP7Spendable newMintingCurrency) onlyOwner external {
+    function setCurrency(KIP7Spendable newMintingCurrency) onlyOwner external {
         _mintingCurrency = newMintingCurrency;
     }
     

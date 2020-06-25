@@ -45,10 +45,10 @@ contract SpenderRole {
 
 contract KIP7Spendable is KIP7, SpenderRole {
 
-  function spend(address from, uint256 value) public onlySpender returns (bool) {
-    _burn(from, value);
-    return true;
-  }
+  // function spend(address from, uint256 value) public onlySpender returns (bool) {
+  //   _burn(from, value);
+  //   return true;
+  // }
   function transCAtoEOA(address from, address to, uint256 amount) public {
       _approve(from, address(this), amount);
       _transfer(from, to, amount);
